@@ -16,8 +16,9 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="Normalize.css" />
-    <link rel="stylesheet" href="public.css" />
+    <link rel="stylesheet" href="public/Normalize.css" />
+    <link rel="stylesheet" href="/public/public.css" />
+    <link rel="stylesheet" href="gw-css.css" />
     <!-- <link rel="stylesheet" href=""> -->
     <link
       rel="stylesheet"
@@ -26,95 +27,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
-    <style>
-      body {
-        background-color: #2b4d37;
-      }
-
-      a:link {
-        color: #000000;
-      }
-      a:hover {
-        color: #2b4d37;
-      }
-
-      .nav {
-        padding-bottom: 8px;
-        border-bottom: 1px solid rgb(124, 124, 124);
-        margin-bottom: 16px;
-      }
-
-      .container {
-        background-color: #e1ded8;
-      }
-      .leftArea {
-      }
-      .partyInfo {
-        border-radius: 10px;
-        box-shadow: 4px 4px 10px rgb(105, 105, 105);
-        padding: 16px;
-        margin-bottom: 16px;
-        background-color: rgba(251, 251, 251, 0.065);
-      }
-      .rightArea {
-      }
-
-      .navbar {
-        /* background-color: aquamarine; */
-      }
-
-      .smallImg {
-        background-color: #1e4f71;
-        flex-direction: column;
-        justify-content: space-evenly;
-      }
-      .playerCard {
-        background-color: #ffe9b1;
-        height: 100px;
-      }
-      .avatar {
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-      }
-      .roomCard {
-        height: 100px;
-        align-items: center;
-      }
-      .card-body {
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: start;
-      }
-      .star {
-        height: 100%;
-      }
-      .bb {
-        border-bottom: 1px solid black;
-        padding-bottom: 2px;
-        margin-bottom: 8px;
-      }
-      .nav-active {
-        padding-bottom: 7px;
-        border-bottom: 2px solid #ff0000;
-      }
-      .faSz {
-        font-size: 20px;
-      }
-
-      .imghome {
-        width: 100px;
-        height: 100px;
-      }
-      img {
-        display: block;
-        width: 100%;
-        height: auto;
-      }
-    </style>
   </head>
 
   <body>
@@ -125,15 +37,24 @@
       <div class="container">
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#">Home</a></li>
-            <li class="breadcrumb-item"><a href="#">Library</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Data</li>
+            <li class="breadcrumb-item">
+              <a href="#"><p>全台棋牌室</p></a>
+            </li>
+            <li class="breadcrumb-item">
+              <a href="#"><p>參團</p></a>
+            </li>
+            <li class="breadcrumb-item">
+              <a href="#"><p>北區</p></a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">
+              <p>麻將大師板橋一店</p>
+            </li>
           </ol>
         </nav>
 
-        <div class="row justify-content-around align-items-start g-2">
+        <div class="gw-page row justify-content-around align-items-start">
           <div class="leftArea col-6 g-3">
-            <nav class="">
+            <nav>
               <ul class="nav nav-fill">
                 <li class="nav-item">
                   <a class="nav-active h6" aria-current="page" href="#party"
@@ -152,9 +73,9 @@
               </ul>
             </nav>
 
-            <div class="partyInfo g-3" id="party">
-              <h5>桌號：</h5>
-              <h6>開團時間：</h6>
+            <div class="gw-infoCard g-3" id="party">
+              <h6>桌號：MGM8555412DF</h6>
+              <h6>開團時間：2024/07/20 (sat) 18:00-22:00</h6>
               <p>台麻十六張</p>
               <div class="d-flex justify-content-start gap-3">
                 <p>特殊規則:</p>
@@ -164,13 +85,13 @@
                 <p>不靠牌</p>
               </div>
             </div>
-            <div class="partyInfo" id="roomInfo">
+            <div class="gw-infoCard" id="roomInfo">
               <div class="roomCard mb-3">
                 <div class="row">
                   <div class="col-md-4">
-                    <div class="imghome">
+                    <div class="gw-logoArea">
                       <img
-                        src="/Google_Maps_icon_(2015-2020).svg.png"
+                        src="/img/Mahjong-masters-logo-transparent-horizontal-300x176.png"
                         class="img-fluid rounded-start"
                         alt="..."
                       />
@@ -180,19 +101,19 @@
                     <div class="card-body">
                       <div class="room-rate d-flex gap-5">
                         <div class="star">
-                          <i class="fa-solid fa-star faSz"></i>
-                          <i class="fa-solid fa-star faSz"></i>
-                          <i class="fa-solid fa-star faSz"></i>
-                          <i class="fa-solid fa-star faSz"></i>
+                          <i class="fa-solid fa-star faSz red"></i>
+                          <i class="fa-solid fa-star faSz red"></i>
+                          <i class="fa-solid fa-star faSz red"></i>
+                          <i class="fa-solid fa-star faSz red"></i>
                           <i class="fa-solid fa-star faSz"></i>
                         </div>
-                        <div class="">
-                          <i class="fa-regular fa-heart faSz"></i>
+                        <div class="gap-5">
+                          <i class="fa-regular fa-heart faSz mx-2"></i>
                           <i class="fa-solid fa-thumbs-up faSz"></i>
                         </div>
                       </div>
                       <div class="card-title">
-                        <h5 class="card-title">麻將大師板橋一店</h5>
+                        <h3 class="card-title">麻將大師板橋一店</h3>
                       </div>
                     </div>
                   </div>
@@ -201,53 +122,47 @@
               <div class="roomAd">
                 <div class="roomAdInfo mb-3">
                   <div class="row">
-                    <div class="col-md-8">
+                    <div>
                       <div class="card-body">
-                        <div class="room-rate gap-2">
-                          <div>
-                            <div class="ad">
+                        <div class="gw-infoBox">
+                          <div class="left">
+                            <div class="gw-address">
                               <p>22047, 新北市板橋區松江街28號</p>
                             </div>
                             <div><p>電話: 02-26885588</p></div>
+                            <div><p>週四:8:00-22:00</p></div>
                           </div>
-                          <div class="time d-flex">
-                            <div>
-                              <i class="fa-solid fa-clock faSz"></i>
+                          <div class="right">
+                            <div class="gw-mapImg">
+                              <img
+                                src="/img/Google_Maps_icon_(2015-2020).svg.png"
+                                class="img-fluid rounded-start"
+                                alt="mapimg"
+                              />
                             </div>
-                            <div class="mx-3">
-                              <p>
-                                <a
-                                  class="btn btn-light"
-                                  data-bs-toggle="collapse"
-                                  href="#collapseExample"
-                                  role="button"
-                                  aria-expanded="false"
-                                  aria-controls="collapseExample"
-                                >
-                                  查看完整營業時間
-                                </a>
-                              </p>
-                              <div class="collapse" id="collapseExample">
-                                <div class="card card-body">
-                                  Some placeholder content for the collapse
-                                  component. This panel is hidden by default but
-                                  revealed when the user activates the relevant
-                                  trigger.
-                                </div>
-                              </div>
+                          </div>
+                        </div>
 
-                              <!-- <p>營業時間 週三 0900-2300</p> -->
+                        <div class="time d-flex align-items-center">
+                          <div class="">
+                            <a
+                              class="btn btn-light"
+                              data-bs-toggle="collapse"
+                              href="#collapseExample"
+                              role="button"
+                              aria-expanded="false"
+                              aria-controls="collapseExample"
+                            >
+                              <p>查看完整營業時間</p>
+                            </a>
+                            <div class="collapse" id="collapseExample">
+                              <div class="card card-body">
+                                <p>周一:8:00到22:00</p>
+                              </div>
                             </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="col-md-4">
-                      <img
-                        src="/Google_Maps_icon_(2015-2020).svg.png"
-                        class="img-fluid rounded-start"
-                        alt="..."
-                      />
                     </div>
                   </div>
                 </div>
@@ -276,12 +191,34 @@
             </div>
             <div class="imgArea mb-3" id="photo">
               <div class="d-flex justify-content-start">
-                <div><img width="400" src="/麻將店/圖片2.jpeg" alt="" /></div>
+                <div>
+                  <img width="400" src="/img/store_img-1.jpeg" alt="" />
+                </div>
                 <div class="smallImg">
-                  <img src="/麻將店/圖片2.jpeg" alt="" width="80" srcset="" />
-                  <img src="/麻將店/圖片2.jpeg" alt="" width="80" srcset="" />
-                  <img src="/麻將店/圖片2.jpeg" alt="" width="80" srcset="" />
-                  <img src="/麻將店/圖片2.jpeg" alt="" width="80" srcset="" />
+                  <img
+                    src="/img/store_img-2.jpeg"
+                    alt=""
+                    width="80"
+                    srcset=""
+                  />
+                  <img
+                    src="/img/store_img-3.jpeg"
+                    alt=""
+                    width="80"
+                    srcset=""
+                  />
+                  <img
+                    src="/img/store_img-4.jpeg"
+                    alt=""
+                    width="80"
+                    srcset=""
+                  />
+                  <img
+                    src="/img/store_img-1.jpeg"
+                    alt=""
+                    width="80"
+                    srcset=""
+                  />
                 </div>
               </div>
             </div>
@@ -306,10 +243,10 @@
             </div>
           </div>
           <div class="rightArea col-4 g-3">
-            <nav class="">
-              <ul class="nav nav-fill">
+            <nav>
+              <ul class="nav">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#party"
+                  <a class="active" aria-current="page" href="#party"
                     ><h6>揪團等候區</h6></a
                   >
                 </li>
@@ -319,7 +256,7 @@
               <div class="row g-0">
                 <div class="col-md-4">
                   <img
-                    src="/麻將桌/周杰倫.jpeg"
+                    src="/img/user/周杰倫.jpeg"
                     class="avatar figure-img img-fluid rounded-start"
                     alt="..."
                   />
@@ -340,7 +277,7 @@
               <div class="row g-0">
                 <div class="col-md-4">
                   <img
-                    src="/麻將桌/蔡依林.jpeg"
+                    src="/img/user/蔡依林.jpeg"
                     class="avatar img-fluid rounded-start"
                     alt="..."
                   />
@@ -361,7 +298,7 @@
               <div class="row g-0">
                 <div class="col-md-4">
                   <img
-                    src="/麻將桌/下載.jpeg"
+                    src="/img/user/下載.jpeg"
                     class="avatar figure-img img-fluid rounded-start"
                     alt="..."
                   />
@@ -382,7 +319,7 @@
               <div class="row g-0">
                 <div class="col-md-4">
                   <img
-                    src="/麻將桌/下載.jpeg"
+                    src="/img/user/下載.jpeg"
                     class="avatar img-fluid rounded-start"
                     alt="..."
                   />

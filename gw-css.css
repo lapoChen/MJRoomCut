@@ -1,0 +1,88 @@
+body {
+  background-color: #2b4d37;
+}
+a:link {
+  color: #000000;
+}
+a:hover {
+  color: #2b4d37;
+}
+a:visited {
+    color: #2b4d37;
+  }.container {
+  background-color: #e1ded8;
+}
+.nav {
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgb(124, 124, 124);
+  margin-bottom: 16px;
+}
+
+.rightArea {
+}
+
+.leftArea {
+}
+.gw-infoCard {
+  border-radius: 10px;
+  box-shadow: 4px 4px 10px rgb(105, 105, 105);
+  padding: 16px;
+  margin-bottom: 16px;
+  background-color: rgba(251, 251, 251, 0.065);
+}
+
+.smallImg {
+  background-color: #1e4f71;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.playerCard {
+  background-color: #ffe9b1;
+  height: 100px;
+}
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.roomCard {
+  height: 100px;
+  align-items: center;
+}
+.card-body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+.star {
+  height: 100%;
+  .red{
+    color: #ff0000;
+}
+}
+.bb {
+  border-bottom: 1px solid rgb(151, 150, 150);
+  padding-bottom: 2px;
+  margin-bottom: 8px;
+}
+.nav-active {
+  padding-bottom: 7px;
+  border-bottom: 2px solid #ff0000;
+}
+.faSz {
+  font-size: 20px;
+}
+
+.gw-logoArea {
+  width: 180px;
+}
+.gw-mapImg{
+    width: 50px;
+}
+
+.gw-infoBox{
+    display: flex;
+    gap: 16px;
+}
