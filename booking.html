@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <!-- 小組公共CSS -->
+    <link rel="stylesheet" href="public/Normalize.css" />
+    <link rel="stylesheet" href="/public/public.css" />
+    <!-- 我自己的CSS -->
+    <link rel="stylesheet" href="gw-css.css" />
+    <!-- font-awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- 日期CSS -->
+    <link rel="stylesheet" href="dateinput.css" />
+    <!-- JQ jquery-ui -->
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <!-- place navbar here -->
+    </header>
+    <main>
+      <div class="container">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb p">
+            <li class="breadcrumb-item">
+              <a href="#">全台棋牌室</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a href="#">參團</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a href="#">北區</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">
+              麻將大師板橋一店
+            </li>
+          </ol>
+        </nav>
+
+        <div class="gw-page row justify-content-around align-items-start">
+          <div class="leftArea col-6 g-3">
+            <!-- 右區導航 -->
+            <nav>
+              <ul class="nav nav-fill">
+                <li class="nav-item">
+                  <a class="nav-active h6" aria-current="page" href="#party"
+                    >揪團</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="h6" href="#roomInfo">店家資訊 </a>
+                </li>
+                <li class="nav-item">
+                  <a class="h6" href="#photo">相片</a>
+                </li>
+                <li class="nav-item">
+                  <a class="h6" href="#toKnow">注意事項</a>
+                </li>
+              </ul>
+            </nav>
+            <!-- 拚團資訊卡片 -->
+            <!-- <div class="gw-infoCard g-3" id="party">
+              <h6>桌號：MGM8555412DF</h6>
+              <h6>開團時間：2024/07/20 (sat) 18:00-22:00</h6>
+              <p>台麻十六張</p>
+              <div class="d-flex justify-content-start gap-3">
+                <p>特殊規則:</p>
+                <p>八仙過海</p>
+                <p>明槓自摸</p>
+                <p>換三張</p>
+                <p>不靠牌</p>
+              </div>
+            </div> -->
+            <!-- 店家卡片 -->
+            <div class="gw-infoCard" id="roomInfo">
+              <div class="roomCard mb-3">
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="gw-logoArea">
+                      <img
+                        src="/img/Mahjong-masters-logo-transparent-horizontal-300x176.png"
+                        class="img-fluid rounded-start"
+                        alt="..."
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <div class="room-rate d-flex gap-5">
+                        <div class="star">
+                          <i class="fa-solid fa-star faSz red"></i>
+                          <i class="fa-solid fa-star faSz red"></i>
+                          <i class="fa-solid fa-star faSz red"></i>
+                          <i class="fa-solid fa-star faSz red"></i>
+                          <i class="fa-solid fa-star faSz"></i>
+                        </div>
+                        <div class="gap-5">
+                          <i class="fa-regular fa-heart faSz mx-2"></i>
+                          <i class="fa-solid fa-thumbs-up faSz"></i>
+                        </div>
+                      </div>
+                      <div class="card-title">
+                        <h3 class="card-title">麻將大師板橋一店</h3>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="roomAd">
+                <div class="roomAdInfo mb-3">
+                  <div class="row">
+                    <div>
+                      <div class="card-body">
+                        <div class="gw-infoBox">
+                          <div class="left">
+                            <div class="gw-address">
+                              <p>22047, 新北市板橋區松江街28號</p>
+                            </div>
+                            <div><p>電話: 02-26885588</p></div>
+                          </div>
+                          <div class="right">
+                            <div class="gw-mapImg">
+                              <img
+                                src="/img/Google_Maps_icon_(2015-2020).svg.png"
+                                class="img-fluid rounded-start"
+                                alt="mapimg"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <!-- 下拉營業時間區塊 -->
+                        <div class="time d-flex align-items-center">
+                          <div class="p">
+                            <a
+                              class=""
+                              data-bs-toggle="collapse"
+                              href="#collapseExample"
+                              role="button"
+                              aria-expanded="false"
+                              aria-controls="collapseExample"
+                            >
+                              週四: 8:00-22:00
+                              <i class="fa-solid fa-caret-down"></i>
+                            </a>
+                            <div class="collapse" id="collapseExample">
+                              <div class="p">周一:8:00到22:00</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 服務區域 -->
+              <div class="d-flex justify-content-between my-3">
+                <span class="pill p">禁菸環境</span>
+                <span class="pill p">過山車麻將桌</span>
+                <span class="pill p">代訂鹹酥雞</span>
+                <span class="pill p">免費飲料點心</span>
+              </div>
+              <!-- 店家簡介 -->
+              <div class="roomInfo">
+                <div class="gw-bb">
+                  <h6>店家簡介</h6>
+                </div>
+                <div class="">
+                  <p>
+                    麻將大師是只欠東風精選店家，場地均提供免費飲料與無限網路，同時提供熟食簡餐多樣選擇。
+                  </p>
+                  <p>
+                    麻將大師所有場館均使用東方不敗過山車電動麻將桌，給您最好的硬體享受，另有麻將包廂，給您安靜隱私的遊玩環境，數量有限，儘速預定。
+                  </p>
+                  <p>全館嚴格禁菸，定時清潔。</p>
+                </div>
+              </div>
+              <div class="roomInfo">
+                <div class="gw-bb my-3">
+                  <h6>費用</h6>
+                </div>
+                <p>大廳:100/hr</p>
+                <p>包廂:200/hr</p>
+              </div>
+            </div>
+            <div class="imgArea gw-infoCard mb-3" id="photo">
+              <h5 class="gw-bb">相片</h5>
+              <div class="d-flex justify-content-between">
+                <div class="mainImg">
+                  <img src="/img/store_img-1.jpeg" alt="" />
+                </div>
+                <div class="sideImg">
+                  <div class="smallImg">
+                    <img
+                      src="/img/store_img-2.jpeg"
+                      alt=""
+                      width="80"
+                      srcset=""
+                    />
+                  </div>
+                  <div class="smallImg">
+                    <img
+                      src="/img/store_img-3.jpeg"
+                      alt=""
+                      width="80"
+                      srcset=""
+                    />
+                  </div>
+                  <div class="smallImg">
+                    <img
+                      src="/img/store_img-4.jpeg"
+                      alt=""
+                      width="80"
+                      srcset=""
+                    />
+                  </div>
+                  <div class="smallImg">
+                    <img
+                      src="/img/store_img-1.jpeg"
+                      alt=""
+                      width="80"
+                      srcset=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="toKnow" id="toKnow">
+              <div class="card text-dark bg-light mb-3">
+                <div class="card-header"><h6>注意事項</h6></div>
+                <div class="card-body">
+                  <div class="card-text">
+                    <ol>
+                      <li>請勿遲到，確定好地址與自身時間。</li>
+                      <li>
+                        競技遊戲有輸有贏，文明語言，拒絕任何形式之暴力行為。
+                      </li>
+                      <li>
+                        請參閱桌主之規則，遵守規則，若有爭議以平台合約做最終解釋。
+                      </li>
+                      <li>嚴禁賭博之行為，檢舉專線：02-2222-2222。</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 右邊區域 拼團等候區 -->
+          <div class="rightArea col-4 g-3">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title gw-bb">麻將大師板橋一店</h5>
+                <label for="datepicker01 "><h6>日期</h6></label>
+                <input
+                  type="text"
+                  id="datepicker01"
+                  autocomplete="off"
+                  class="form-control w-25"
+                  value="年/月/日"
+                />
+                <div class="timecontrlo">
+                  <div class="timeBox startTime">
+                    <label for="appt"><h6>開始時間</h6></label>
+
+                    <input
+                      type="time"
+                      id="appt"
+                      name="appt"
+                      min="09:00"
+                      max="22:00"
+                      required
+                    />
+                  </div>
+
+                  <div class="timeBox endTime">
+                    <label for="appt"><h6>結束時間</h6></label>
+
+                    <input
+                      type="time"
+                      id="appt"
+                      name="appt"
+                      min="09:00"
+                      max="22:00"
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <!-- place footer here -->
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $("document").ready(function () {
+        $("#datepicker").datepicker({
+          dateFormat: "dd-mm-yy",
+          duration: "fast",
+        });
+        $("#datepicker01").datepicker({
+          dateFormat: "yy-mm-dd",
+          duration: "fast",
+        });
+
+        $("#datepicker02").datepicker({
+          dateFormat: "yy-mm-dd",
+          duration: "fast",
+        });
+
+        $.datepicker.regional["zh-TW"] = {
+          clearText: "清除",
+          clearStatus: "清除已選日期",
+          closeText: "關閉",
+          closeStatus: "取消選擇",
+          prevText: "<上一月",
+          prevStatus: "顯示上個月",
+          nextText: "下一月>",
+          nextStatus: "顯示下個月",
+          currentText: "今天",
+          currentStatus: "顯示本月",
+          monthNames: [
+            "一月",
+            "二月",
+            "三月",
+            "四月",
+            "五月",
+            "六月",
+            "七月",
+            "八月",
+            "九月",
+            "十月",
+            "十一月",
+            "十二月",
+          ],
+          monthNamesShort: [
+            "一",
+            "二",
+            "三",
+            "四",
+            "五",
+            "六",
+            "七",
+            "八",
+            "九",
+            "十",
+            "十一",
+            "十二",
+          ],
+          monthStatus: "選擇月份",
+          yearStatus: "選擇年份",
+          weekHeader: "周",
+          weekStatus: "",
+          dayNames: [
+            "星期日",
+            "星期一",
+            "星期二",
+            "星期三",
+            "星期四",
+            "星期五",
+            "星期六",
+          ],
+          dayNamesShort: [
+            "周日",
+            "周一",
+            "周二",
+            "周三",
+            "周四",
+            "周五",
+            "周六",
+          ],
+          dayNamesMin: ["日", "一", "二", "三", "四", "五", "六"],
+          dayStatus: "設定每周第一天",
+          dateStatus: "選擇 m月 d日, DD",
+          dateFormat: "yy-mm-dd",
+          firstDay: 1,
+          initStatus: "請選擇日期",
+          isRTL: false,
+        };
+        $("#datepicker").datepicker();
+        $.datepicker.setDefaults($.datepicker.regional["zh-TW"]);
+      });
+    </script>
+  </body>
+</html>

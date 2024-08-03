@@ -122,3 +122,14 @@ a:visited {
   .partyPayers{
     width: 400px;
   }
+  .timeBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+  .timecontrlo{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
+  }
