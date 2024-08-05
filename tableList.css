@@ -1,0 +1,115 @@
+body {
+  background-color: var(--form-bg);
+  a {
+    color: var(--text-color);
+  }
+}
+.topBar-gw {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 16px 0px;
+  font-size: 24px;
+  .active-gw {
+    border-bottom: 2px solid var(--primary-dark);
+  }
+}
+.pageBody-gw {
+}
+.searchArea-gw {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  .searchBox-gw {
+    border: 2px 0 2px 2px solid;
+    --bs-border-color: var(--primary);
+    border-radius: 10px;
+  }
+  button {
+    background-color: var(--primary);
+    border: 2px 2px 2px 0 solid var(--primary);
+  }
+  i {
+    color: var(--white);
+  }
+}
+.btnGruop-gw {
+  display: flex;
+  .btn-gw {
+    background-color: var(--primary);
+    width: 132px;
+    height: 42px;
+    border-radius: 21px;
+    border: 0;
+    color: var(--bg-text-color);
+  }
+}
+.partyHolder-gw {
+}
+.partyPlayer-gw {
+}
+
+.cardArea {
+  width: 100%;
+  height: auto;
+  display: grid;
+  /* flex-wrap: wrap; */
+  /* justify-content: space-between; */
+  justify-items: center;
+  /* align-content: center; */
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  column-gap: 8px;
+  .card {
+    max-width: 70rem;
+    width: 100%;
+    /* margin-bottom: 16px; */
+  }
+}
+.pagesplit {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 8px;
+  margin-top: 16px;
+}
+.progress {
+  width: 25%;
+}
+/* 元件來自正龍 */
+.btn-more {
+  color: var(--primary);
+  width: 150px;
+  padding: 1rem 0 1rem 2rem;
+  border: 2px solid var(--primary);
+  border-radius: 4rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transition: 0.3s;
+  cursor: pointer;
+
+  .edit-icon {
+    text-align: start;
+    background-image: url("./img/web/btnMore.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50px;
+    height: 12px;
+    transition: 0.3s;
+  }
+
+  p {
+    font-size: 1.4rem;
+  }
+  &:hover {
+    color: var(--primary-dark);
+    border-color: var(--primary-dark);
+    .edit-icon {
+      background-image: url("/img/web/btnMoreHover.svg");
+      transform: translateX(3px);
+    }
+  }
+}
