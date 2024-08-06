@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Title</title>
+    <title>PartRoom</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
@@ -53,9 +53,9 @@
         </nav>
 
         <div class="gw-page">
-          <div class="leftArea col-6 g-3">
+          <div class="leftArea g-3">
             <!-- 右區導航 -->
-            <div class="rightNav">
+            <div class="leftNav">
               <nav>
                 <ul class="nav nav-fill">
                   <li class="nav-item">
@@ -262,9 +262,9 @@
             </div>
           </div>
           <!-- 右邊區域 拼團等候區 -->
-          <div class="rightArea col-4 g-3">
+          <div class="rightArea g-3">
             <div class="partyPayers">
-              <nav>
+              <nav class="rightNav">
                 <ul class="nav">
                   <li class="nav-item">
                     <a class="active" aria-current="page" href="#party"
@@ -276,89 +276,21 @@
               <!-- 卡片區域 -->
 
               <!-- 團主 -->
-              <div class="playerCard mb-3" style="max-width: 540px">
-                <div class="row g-0">
-                  <div class="col-md-4">
-                    <img
-                      src="/img/user/周杰倫.jpeg"
-                      class="avatar figure-img img-fluid rounded-start"
-                      alt="..."
-                    />
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h6 class="card-title">張繼承</h6>
-                      <p class="card-text">桌主</p>
-                      <!-- <p class="card-text">
-                         <small class="text-muted"> </small>
-                       </p> -->
-                    </div>
-                  </div>
+              <div class="playerCard gap-3 bg-light">
+                <div class="playerImg">
+                  <img class="img-fluid" src="/img/001.JPG" alt="" />
+                </div>
+                <div class="cardBody">
+                  <h5>name</h5>
+                  <p>vicchen</p>
                 </div>
               </div>
               <!-- 第二位 -->
-              <div class="playerCard mb-3" style="max-width: 540px">
-                <div class="row g-0">
-                  <div class="col-md-4">
-                    <img
-                      src="/img/user/蔡依林.jpeg"
-                      class="avatar img-fluid rounded-start"
-                      alt="..."
-                    />
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h6 class="card-title">蔡依林</h6>
-                      <p class="card-text">玩家</p>
-                      <!-- <p class="card-text">
-                         <small class="text-muted"> </small>
-                       </p> -->
-                    </div>
-                  </div>
-                </div>
-              </div>
+
               <!-- 第三位 -->
-              <div class="playerCard mb-3" style="max-width: 540px">
-                <div class="row g-0">
-                  <div class="col-md-4">
-                    <img
-                      src="/img/user/下載.jpeg"
-                      class="avatar figure-img img-fluid rounded-start"
-                      alt="..."
-                    />
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h6 class="card-title">等待中</h6>
-                      <p class="card-text">路人</p>
-                      <!-- <p class="card-text">
-                         <small class="text-muted"> </small>
-                       </p> -->
-                    </div>
-                  </div>
-                </div>
-              </div>
+
               <!-- 第四位 -->
-              <div class="playerCard mb-3" style="max-width: 540px">
-                <div class="row g-0">
-                  <div class="col-md-4">
-                    <img
-                      src="/img/user/下載.jpeg"
-                      class="avatar img-fluid rounded-start"
-                      alt="..."
-                    />
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h6 class="card-title">等待中</h6>
-                      <p class="card-text">路人</p>
-                      <!-- <p class="card-text">
-                         <small class="text-muted"> </small>
-                       </p> -->
-                    </div>
-                  </div>
-                </div>
-              </div>
+
               <!-- 按鈕 桌主會顯示解散 路人顯示加入 -->
               <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                 <button type="button" class="btn btn-primary btn-lg p">

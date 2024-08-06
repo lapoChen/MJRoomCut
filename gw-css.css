@@ -1,6 +1,9 @@
 body {
   background-color: #2b4d37;
 }
+:root {
+  scroll-padding-top: 7rem;
+}
 a:link {
   color: #000000;
 }
@@ -8,8 +11,8 @@ a:hover {
   color: #2b4d37;
 }
 a:visited {
-    color: #2b4d37;
-  }
+  color: #2b4d37;
+}
 .container {
   background-color: #e1ded8;
 }
@@ -18,28 +21,81 @@ a:visited {
   border-bottom: 1px solid rgb(124, 124, 124);
   margin-bottom: 16px;
 }
+.BC-gw {
+  position: sticky;
+  top: 0px;
+  background-color: #e1ded8;
+  padding: 4px;
+}
+.gw-page {
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
 
-.rightArea {
+  .leftArea {
+    width: 50%;
+  }
+  .rightArea {
+    width: 40%;
+    position: sticky;
+    top: 30px;
+  }
+  .partyPayers {
+    width: 100%;
+  }
+}
+@media (max-width: 576px) {
+  .gw-page {
+    flex-direction: column;
+    .leftArea {
+      width: 100%;
+      order: 2;
+    }
+    .rightArea {
+      order: 1;
+      width: 100%;
+      position: static;
+      top: 0px;
+
+      .rightNav {
+        display: none;
+      }
+      .partyPayers {
+        /* flex-wrap: wrap; */
+        flex-direction: row;
+        display: flex;
+      }
+      .playerCard {
+        width: 40%;
+      }
+    }
+  }
 }
 
-.leftArea {
+.leftNav {
+  position: sticky;
+  top: 30px;
+  background-color: #e1ded8;
 }
+
 .gw-infoCard {
   border-radius: 10px;
-  box-shadow: 4px 4px 10px rgb(105, 105, 105);
+  /* box-shadow: 4px 4px 10px rgb(105, 105, 105); */
   padding: 16px;
   margin-bottom: 16px;
-  background-color: rgba(251, 251, 251, 0.065);
+  background-color: rgba(255, 255, 255, 0.485);
+}
+.rulesBox {
+  flex-wrap: wrap;
 }
 
-.playerCard {
-  background-color: #ffe9b1;
-  height: 100px;
-}
 .avatar {
   width: 100px;
   height: 100px;
   border-radius: 50%;
+}
+.serverBox {
+  flex-wrap: wrap;
 }
 .roomCard {
   height: 100px;
@@ -55,9 +111,9 @@ a:visited {
 .star {
   height: 100%;
   color: #2b4d37;
-  .red{
-    color:#b79347;
-}
+  .red {
+    color: #b79347;
+  }
 }
 .gw-bb {
   border-bottom: 1px solid rgb(151, 150, 150);
@@ -75,61 +131,68 @@ a:visited {
 .gw-logoArea {
   width: 180px;
 }
-.gw-mapImg{
-    width: 50px;
+.gw-mapImg {
+  width: 50px;
 }
 
-.gw-infoBox{
-    display: flex;
-    gap: 16px;
+.gw-infoBox {
+  display: flex;
+  gap: 16px;
 }
-.imgArea{
-    img{   
-        width: 100%;   
-        height: 100%;   
-        object-fit:cover;   
-    }  
-    .mainImg{
-        object-fit: cover;
-        width: 500px;
-        height: 380px;
-        /* margin-right: 16px; */
-    }
-    .sideImg{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-    .smallImg{
-        width: 80px;
-        height: 80px;
-    }
-}
-.serverPill{
-   width: 90px;
- 
-}
-.pill{
-    display: inline-block;
-   padding: 2px 16px  ;
-    border: 1px solid #000000;
-    border-radius: 15px;
-}
-.sticky {
-    position: fixed;
-    top: 30px;
+.imgArea {
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
-  .partyPayers{
-    width: 400px;
+  .mainImg {
+    object-fit: cover;
+    width: 500px;
+    height: 380px;
+    /* margin-right: 16px; */
   }
-  .timeBox{
+  .sideImg {
     display: flex;
     flex-direction: column;
-    justify-content: start;
-  }
-  .timecontrlo{
-    display: flex;
     justify-content: space-between;
-    width: 100%;
-    
   }
+  .smallImg {
+    width: 80px;
+    height: 80px;
+  }
+}
+.serverPill {
+  width: 90px;
+}
+.pill {
+  /* width: 5rem; */
+  display: inline-block;
+  padding: 2px 16px;
+  border: 1px solid #000000;
+  border-radius: 15px;
+}
+
+.timeBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+.timecontrlo {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+/* 玩家區域 */
+.playerCard {
+  display: flex;
+  width: 100%;
+  background-color: #ffe9b1;
+
+  .playerImg {
+  }
+  img {
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+  }
+}
