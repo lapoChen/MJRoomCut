@@ -154,6 +154,7 @@ a:visited {
   .sideImg {
     display: flex;
     flex-direction: column;
+<<<<<<< HEAD
     justify-content: space-between;
   }
   .smallImg {
@@ -196,3 +197,16 @@ a:visited {
     border-radius: 50%;
   }
 }
+=======
+    justify-content: start;
+    margin-right: 120px;
+    width: 25%;
+    
+    
+  }
+  .timecontrlo{
+    display: flex;
+    width: 100%;
+    justify-content:start ;
+  }
+>>>>>>> origin/PC
