@@ -126,10 +126,13 @@ a:visited {
     display: flex;
     flex-direction: column;
     justify-content: start;
+    margin-right: 120px;
+    width: 25%;
+    
+    
   }
   .timecontrlo{
     display: flex;
-    justify-content: space-between;
     width: 100%;
-    
+    justify-content:start ;
   }

@@ -275,7 +275,7 @@
           <div class="rightArea col-4 g-3">
             <div class="card">
               <div class="card-body">
-                <h5 class="card-title gw-bb">麻將大師板橋一店</h5>
+                <h5 class="card-title gw-bb w-100">麻將大師板橋一店</h5>
                 <label for="datepicker01 "><h6>日期</h6></label>
                 <input
                   type="text"
@@ -284,7 +284,7 @@
                   class="form-control w-25"
                   value="年/月/日"
                 />
-                <div class="timecontrlo">
+                <div class="timecontrlo gw-bb">
                   <div class="timeBox startTime">
                     <label for="appt"><h6>開始時間</h6></label>
 
@@ -309,6 +309,57 @@
                       max="22:00"
                       required
                     />
+                  </div>
+                </div>
+                <div class="gw-bb w-100">
+                  <h5>區域</h5>
+                  <select
+                    class="form-select p"
+                    aria-label="Default select example"
+                  >
+                    <option selected>大廳/包廂</option>
+                    <option value="大廳">大廳</option>
+                    <option value="包廂">包廂</option>
+                  </select>
+                </div>
+                <div>
+                  <div
+                    class="h5"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#MJrules"
+                    aria-expanded="false"
+                    aria-controls="collapseExample"
+                  >
+                    規則選擇
+                  </div>
+
+                  <div class="collapse" id="MJrules">
+                    <div class="card card-body p">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault"
+                        />
+                        <label class="form-check-label" for="flexCheckDefault">
+                          八仙過海
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckChecked"
+                          checked
+                        />
+                        <label class="form-check-label" for="flexCheckChecked">
+                          不靠牌
+                        </label>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
